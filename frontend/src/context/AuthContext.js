@@ -21,7 +21,7 @@ const AuthProvider = ({ children }) => {
 
   const loadAdmin = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/auth/admin');
+      const res = await axios.get('https://bniabundance-backend-0iqp.onrender.com/api/auth/admin');
       setAdmin(res.data);
       setIsAuthenticated(true);
     } catch (err) {
