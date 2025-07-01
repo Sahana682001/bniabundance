@@ -1,0 +1,21 @@
+.custom-footer {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  background-color: #535353;
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.custom-footer.full-width {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-footer {
+    padding: 15px 10px;
+    font-size: 0.8rem;
+  }
+}
