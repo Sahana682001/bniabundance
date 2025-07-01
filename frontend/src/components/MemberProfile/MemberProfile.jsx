@@ -25,7 +25,7 @@ const MemberProfile = () => {
 
     const fetchMember = async () => {
       try {
-        const response = await fetch(`https://bniabundance-frondend.onrender.com/api/members/${id}`);
+        const response = await fetch(`https://bniabundance-backend-0iqp.onrender.com/api/members/${id}`);
         if (!response.ok) throw new Error('Member not found');
         const data = await response.json();
         setMember(data);
