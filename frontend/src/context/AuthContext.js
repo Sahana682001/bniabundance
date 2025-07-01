@@ -34,7 +34,7 @@ const AuthProvider = ({ children }) => {
 
   const register = async (formData) => {
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/register', formData);
+      const res = await axios.post('https://bniabundance-backend-0iqp.onrender.com/api/auth/register', formData);
       localStorage.setItem('token', res.data.token);
       setToken(res.data.token);
       setAdmin(res.data.admin);
@@ -47,7 +47,7 @@ const AuthProvider = ({ children }) => {
 
   const login = async (formData) => {
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', formData);
+      const res = await axios.post('https://bniabundance-backend-0iqp.onrender.com/api/auth/login', formData);
       localStorage.setItem('token', res.data.token);
       setToken(res.data.token);
       setAdmin(res.data.admin);
