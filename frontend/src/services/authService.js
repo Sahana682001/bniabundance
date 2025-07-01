@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/auth';
+const API_URL = 'https://bniabundance-backend-0iqp.onrender.com/api/auth';
 
 // Register admin
 const register = async (adminData) => {
