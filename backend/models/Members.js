@@ -18,14 +18,11 @@ const memberSchema = new mongoose.Schema({
   phoneNumber: String,
   emailId: String,
   website: String,
- role: String,
-  inductions: String,
-  businessGiveninRupees: String,
-  businessGiven: String,
-  referrals: Number,
-  visitors: Number,
-  aboutheading: String,
+  role: String,
+  // Removed inductions, businessGiveninRupees, businessGiven, referrals, visitors (since not in DB)
+  aboutHeading: String, // ✅ fixed from "aboutheading"
   aboutPara: String,
+  businessImg: String, // ✅ added, missing before
   statistics: [
     {
       number: String,
