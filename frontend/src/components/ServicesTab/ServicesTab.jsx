@@ -12,7 +12,7 @@ const ServicesTab = () => {
   useEffect(() => {
     const fetchMember = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/members/${id}`);
+        const res = await fetch(`https://bniabundance-backend-0iqp.onrender.com/api/members/${id}`);
         if (!res.ok) throw new Error('Failed to fetch');
         const data = await res.json();
         setMember(data);
