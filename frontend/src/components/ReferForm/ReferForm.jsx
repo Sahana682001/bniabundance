@@ -26,7 +26,7 @@ const ReferForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/referrals', formData);
+      await axios.post('https://bniabundance-backend-0iqp.onrender.com/api/referrals', formData);
       alert('Referral submitted successfully!');
     } catch (err) {
       console.error(err);
