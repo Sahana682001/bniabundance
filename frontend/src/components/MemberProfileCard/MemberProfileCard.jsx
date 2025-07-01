@@ -12,7 +12,7 @@ const MemberProfileCard = () => {
   useEffect(() => {
     const fetchMember = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/members/${id}`);
+        const response = await fetch(`https://bniabundance-backend-0iqp.onrender.com/api/members/${id}`);
         if (!response.ok) {
           throw new Error('Failed to fetch member');
         }
