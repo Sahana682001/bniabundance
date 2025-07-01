@@ -27,7 +27,7 @@ const MembersTable = () => {
 
   const fetchMembers = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/members");
+      const response = await fetch("https://bniabundance-backend-0iqp.onrender.com/api/members");
       if (!response.ok) throw new Error("Network response was not OK");
 
       const data = await response.json();
