@@ -46,7 +46,7 @@ const MembersTable = () => {
 
   const fetchCategories = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/members/categories");
+      const res = await fetch("https://bniabundance-backend-0iqp.onrender.com/api/members/categories");
       const data = await res.json();
       console.log("Fetched categories:", data); // Add this
       if (Array.isArray(data)) {
