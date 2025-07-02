@@ -17,10 +17,10 @@ const Dashboard = () => {
     const fetchData = async () => {
       try {
         const [membersRes, referralsRes, activeRes, inactiveRes] = await Promise.all([
-          fetch("http://localhost:5000/api/members"),
-          fetch("http://localhost:5000/api/referrals"),
-          fetch("http://localhost:5000/api/members/active"),
-          fetch("http://localhost:5000/api/members/inactive"),
+          fetch("https://bniabundance-backend-0iqp.onrender.com/api/members"),
+          fetch("https://bniabundance-backend-0iqp.onrender.com/api/referrals"),
+          fetch("https://bniabundance-backend-0iqp.onrender.com/api/members/active"),
+          fetch("https://bniabundance-backend-0iqp.onrender.com/api/members/inactive"),
         ]);
 
         if (!membersRes.ok || !referralsRes.ok || !activeRes.ok || !inactiveRes.ok) {
