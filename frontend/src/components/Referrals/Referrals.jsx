@@ -5,7 +5,7 @@ const ReferralTable = () => {
   const [referrals, setReferrals] = useState([]);
 
   useEffect(() => {
-    fetch('/api/referrals')
+    fetch('https://bniabundance-backend-0iqp.onrender.com/api/referrals')
       .then((res) => res.json())
       .then((data) => setReferrals(data))
       .catch((err) => console.error('Error fetching referrals:', err));
