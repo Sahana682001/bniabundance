@@ -68,7 +68,7 @@ const MembersTable = () => {
         tabs: newMember.tabs || [],
       };
 
-      const response = await fetch("http://localhost:5000/api/members", {
+      const response = await fetch("https://bniabundance-backend-0iqp.onrender.com/api/members", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(memberToAdd),
@@ -94,7 +94,7 @@ const MembersTable = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/members/${updatedMember._id}`,
+        `https://bniabundance-backend-0iqp.onrender.com/api/members/${updatedMember._id}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
@@ -131,7 +131,7 @@ const MembersTable = () => {
     if (!window.confirm("Are you sure you want to delete this member?")) return;
 
     try {
-      const response = await fetch(`http://localhost:5000/api/members/${id}`, {
+      const response = await fetch(`https://bniabundance-backend-0iqp.onrender.com/api/members/${id}`, {
         method: "DELETE",
       });
 
