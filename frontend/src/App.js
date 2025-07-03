@@ -28,7 +28,6 @@ function AppRoutes() {
     maxWidth: isFullScreen ? "100%" : "1080px",
     margin: "0 auto",
     height: isFullScreen ? "100vh" : "1920px",
-    overflowY: "auto",
   };
 
   return (
