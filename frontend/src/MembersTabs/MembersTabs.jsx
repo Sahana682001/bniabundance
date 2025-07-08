@@ -255,7 +255,7 @@ const MemberList = () => {
             View Detail
           </button>
            <button className="referral-btn" onClick={handleReferralClick}>
-      Referral
+      Refer
     </button>
         </div>
       </div>
