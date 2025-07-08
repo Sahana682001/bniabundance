@@ -11,7 +11,7 @@ const Footer = () => {
   const isFullWidth = fullWidthRoutes.includes(location.pathname);
 
   return (
-    <footer className={custom-footer ${isFullWidth ? 'full-width' : ''}}>
+    <footer className={custom-footer ${isFullWidth ? 'full-width' : ''}>
       <p>
         © 2025 <strong>bni-india.in</strong> All rights reserved. Designed & Developed by <strong><a style={{ color: "white" }} href='https://www.digiworq.com/' target='_blank' rel="noreferrer">DIGIWORQ</a></strong>
       </p>
