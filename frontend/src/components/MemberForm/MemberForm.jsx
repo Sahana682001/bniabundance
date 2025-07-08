@@ -241,7 +241,7 @@ const MemberForm = ({ initialData = {}, onSubmit, onSuccess, isOpen, onClose,sel
                   <div className="member-form-field">
                     <label>Website</label>
                     <input 
-                      type="url"
+                      type="text"
                       value={formData.website} 
                       onChange={(e) => handleChange("website", e.target.value)} 
                     />
