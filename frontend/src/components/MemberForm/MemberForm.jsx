@@ -205,12 +205,12 @@ const MemberForm = ({ initialData = {}, onSubmit, onSuccess, isOpen, onClose,sel
                     />
                   </div>
                   <div className="member-form-field">
-                    <label>Role*</label>
+                    <label>Role</label>
                     <input 
                       type="text"
                       value={formData.role} 
                       onChange={(e) => handleChange("role", e.target.value)} 
-                      required
+                      
                     />
                   </div>
                 </div>
