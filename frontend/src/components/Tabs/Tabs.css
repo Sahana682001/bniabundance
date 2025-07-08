@@ -38,6 +38,12 @@
     background-color: #f9f9f9;
   }
 
+.tab-content {
+  max-height: 100%; /* or set a fixed height like 400px if needed */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
   @media screen and (max-width: 768px) {
     
   }
