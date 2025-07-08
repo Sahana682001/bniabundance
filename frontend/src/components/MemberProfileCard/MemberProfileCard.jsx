@@ -122,7 +122,7 @@ const MemberProfileCard = () => {
     href={
       member.website?.startsWith("http")
         ? member.website
-        : `https://${member.website || "www.praveendiamondsjewellery.com"}`
+        : `https://${member.website || "Not available"}`
     }
     className="detail-value link"
     target="_blank"
