@@ -31,7 +31,7 @@ const HeroSection = () => {
                         <img src={bniGroupImg} alt="BNI Group" className="img-fluid" />
                         <div className="bg-dangerr text-white d-flex justify-content-center mx-auto">
                             <div className="total">Total Business <br/> till date </div>
-                            <div className="number"> 63,58,03,178</div>
+                            <div className="number"> 63,85,15,368</div>
                         </div>
                     </div>
                 </div>
